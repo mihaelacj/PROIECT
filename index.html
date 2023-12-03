@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tehnici de programare</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar, h1, button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor, .fa-coffee {
+            font-size: 200px
+        }
+    </style>
+</head>
+<body>
+    <section>Words</section> <!--your page content-->
+    <div class="scroll-top">
+        <!--scrollbar at the end of main-->
+        <a class="scroll-top__link" href="#">Înapoi sus!</a> <!--href="#" navigates to the top of the page-->
+    </div>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-purple w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+            <a href="#1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Metoda reluării/backtracking</a>
+            <a href="#2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Metoda Greedy </a>
+            <a href="#3" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Metoda trierii</a>
+            <a href="#4" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Metoda recursiei</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-grey w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Tehnici de programare</h1>
+        <p class="w3-xlarge">Realizat de Cijicenco Mihaela</p>
+        <p class="w3-button w3-purple w3-padding-large w3-large w3-margin-top">Să începem!</p>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 id="1">Metoda reluării/backtracking</h1>
+                <h5 class="w3-padding-32">Metoda backtracking poate fi folosită în rezolvarea a diverse probleme. Este o metodă lentă, dar de multe ori este singura pe care o avem la dispoziție!</h5>
+
+                <p class="w3-text-black">
+                    Metoda backtracking poate fi aplicată în rezolvarea problemelor care respectă următoarele condiții:
+                    <ul>
+                        <li>soluția poate fi reprezentată printr-un tablou x[]=(x[1], x[2], ..., x[n]), fiecare element x[i] aparținând unei mulțimi cunoscute Ai;</li>
+                        <li>fiecare mulțime Ai este finită, iar elementele ei se află într-o relație de ordine precizată – de multe ori cele n mulțimi sunt identice;</li>
+                        <li>se cer toate soluțiile problemei sau se cere o anumită soluție care nu poate fi determinată într-un alt mod (de regulă mai rapid).</li>
+                    </ul>
+
+                </p>
+            </div>
+
+            <div class="w3-third w3-center">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Exemple de probleme:</h1>
+                <h5 class="w3-padding-32">1. De obținut din mulțimea {1;2;3;4}, toate aranjamentele posibile.</h5>
+                <img src="problema1.png" />
+                <br />
+                <h5 class="w3-padding-32">2. Se dau n-mulțimi. De afișat produsul cartezian al acestor mulțimi.</h5>
+                <img src="problema2.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 id="2">Metoda Greedy</h1>
+                <h5 class="w3-padding-32">
+                    Metoda de programare Greedy se aplică problemelor de optimizare. Aceasta metoda
+                    constă în faptul că se construieşte soluția optimă pas cu pas, la fiecare pas fiind selectat în soluție
+                    elementul care pare „cel mai bun/cel mai optim” la momentul respectiv, în speranța că această
+                    alegere locală va conduce la optimul global.
+                </h5>
+
+                <p class="w3-text-black">
+                    Metoda Greedy se aplică problemelor pentru care se dă o mulţime A cu n elemente şi
+                    pentru care trebuie determinată o submulţime a sa, S cu m elemente, care îndeplinesc anumite
+                    condiţii, numite si condiții de optim.
+                    </ul>
+
+                </p>
+            </div>
+
+            <div class="w3-third w3-center">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Exemple de probleme:</h1>
+                <h5 class="w3-padding-32">
+                    1. Managerul artistic al unui festival trebuie sa selecteze o multime cat mai ampla de spectacole ce pot fi jucate in singura sala pe care o are la dispozitie.Stiind ca i s-au propus n spectacole si pentru fiecare spectacol i-a fost anuntat intervalul in care se poate desfasura [st, sf] (st reprezinta ora si minutul de inceput, iar sf ora si minutul de final al spectacolului i),
+                    scrieti un program care sa permita spectatorilor vizionarea unui numar cat mai mare de spectacole.
+                </h5>
+                <img src="problema3.png" />
+                <br />
+                <h5 class="w3-padding-32">2. Sa se determine o submultime S , astfel incat suma elementelor ei sa fie maxima.</h5>
+                <img src="problema4.png" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 id="3">Metoda trierii</h1>
+                <h5 class="w3-padding-32">
+                    Se numeşte metoda trierii o metodă ce indentifică toate soluţiile unei probleme în dependenţă de mulţimea soluţiilor posibile.
+                    Toate soluţiile se identifică prin valori, ce aparţin tipurilor de date studiate: intregi, boolean, enumerare, char, subdomeniu, tablouri unidimensionale.
+                </h5>
+
+                <p class="w3-text-black">
+                    Avantajul principal al algoritmilor bazaţi pe metoda trierii constă în faptul că programele respective sunt relativ simple, iar depanarea lor nu necesită teste sofisticate. Complexitatea temporală a acestor algorimi este determinată de numărul de elemente k din mulţimea soluţiilor posibile S. În majoritatea problemelor de o reală importanţă practică metoda trierii conduce la algoritmiii exponenţiali. Întrucît algoritmii exponenţiali sunt inacceptabili
+                    în cazul datelor de intrare foarte mari,metoda trierii este aplicată numai în scopuri didactice sau pentru elaborarea unor programe al căror timp de execuţie nu este critic.
+
+
+                </p>
+            </div>
+            <div class="w3-third w3-center">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Exemple de probleme:</h1>
+                <h5 class="w3-padding-32">
+                    1. De afisat la ecran toate numerele formate din maxim 3 cifre, la care suma numerelor este un numar dat s.
+                </h5>
+                <img src="pr5.png" />
+                <br />
+                <h5 class="w3-padding-32">2. De afisat la ecran toate numerele norocoase care au 6 cifre.</h5>
+                <img src="problema6.png" />
+            </div>
+        </div>
+    </div>
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 id="4">Metoda recursiva</h1>
+                <h5 class="w3-padding-32">
+                    Una din cele mai răspândite tehnici de programare este recursia.
+                    Recursivitatea este procesul iterativ prin care valoarea unei variabile se determină pe baza uneia sau a mai multora dintre propriile ei valori anterioare.
+                </h5>
+
+                <p class="w3-text-black">
+                    Structurile recursive reprezintă o alternativă de realizare a proceselor repetitive fără a utiliza cicluri. Admitem că recursia se defineşte ca o situaţie în care un subprogram se autoapeleaza fie direct,
+                    fie prin intermediul altui subprogram. Tehnicile în studiu se numesc respectiv recursia directă şi recursia indirectă.
+
+                </p>
+            </div>
+
+            <div class="w3-third w3-center">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Exemple de probleme:</h1>
+                <h5 class="w3-padding-32">1. De afisat la ecran cel mai mare divizor comun a doua numere.</h5>
+                <img src="problema7.png" />
+                <br />
+                <h5 class="w3-padding-32">2. De afisat la ecran suma cifrelor unui numar.</h5>
+                <img src="problema8.png" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+</html>
